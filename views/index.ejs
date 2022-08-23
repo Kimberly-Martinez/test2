@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>JSON Estudiantes </title>
+</head>
+<body>
+    <div class="contenedor">
+    
+    <h1>Tabla de Estudiantes</h1>
+    
+</div>
+
+    <table border>
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>abscense</th>
+            <th>idGrade</th>
+
+        </thead>
+        <tbody>
+            <% for(el of locals.Estudiantes){%>
+                <tr>
+                    <td><%=el.id%></td>
+                    <td><%=el.name%></td>
+                    <td><%=el.abscense%></td>
+                    <td><%=el.idGrade%></td>
+
+
+                </tr>
+                <%}%>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
